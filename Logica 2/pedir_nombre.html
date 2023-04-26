@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<!--Autor: Enrique Cocom Canul -->
+
+<script>
+    // Formula = peso de la persona - divivido entre altura al cuadrado
+    function saltarLinea() {
+      document.write("<br>");
+      document.write("<br>");
+      document.write("<br>");
+    }
+  
+    // Parametro de entrada - esperando el texto e imprimirlo.
+    function imprimir(frase) {
+      document.write(frase);
+      saltarLinea();
+    }
+
+    var respuesta = "";
+
+    while(true){
+      respuesta = prompt("¿Cual es tu nombre?")
+      if(respuesta =="SALIR"){
+        break;
+      }
+    }
+    imprimir("Fin")
+</script>

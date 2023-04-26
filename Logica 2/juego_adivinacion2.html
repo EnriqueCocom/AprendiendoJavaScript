@@ -1,0 +1,51 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN</h1>
+<!--Indice de masa corporal-->
+
+<script>
+  // Formula = peso de la persona - divivido entre altura al cuadrado
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  // Funcion para calcular un numero ramdon 0-10
+  var numero1 = Math.round(Math.random() * 10);
+  var intentos = 3;
+  var contador = 1;
+
+  while (contador <= intentos) {
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+    if (numero1 == numeroLanzado) {
+      alert("Felicidades acertó en el intento " + contador + " el numero pensado era " + numero1);
+      break; //Freno 
+    }
+
+    else {
+      alert("Usted erró ");
+    }
+    contador++;
+  }
+
+  if (numero1 == numeroLanzado) {
+    imprimir("Felicidades acertó en el intento " +  contador + " el numero pensado era " + numero1);
+  }
+
+  else {
+    imprimir("Usted erró, el número pensado era " + numero1);
+  }
+
+  imprimir("Fin")
+  
+</script>

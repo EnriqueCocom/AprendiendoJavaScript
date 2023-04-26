@@ -1,0 +1,38 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA CALCULAR IMC</h1>
+<!--Indice de masa corporal-->
+
+<script>
+  // Formula = peso de la persona - divivido entre altura al cuadrado
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  //Funcion para calcular el IMC --- se retornara la formula --  siempre empezar de  forma ordenada
+  // Se puede llamar a una función dentro de una función.
+
+  function calcularImc(peso, altura) {
+
+    return (peso / (altura * altura));
+  }
+
+  nombre = prompt("Informe su nombre: ");
+  pesoInformado = prompt( nombre + ", Informe su peso: ");
+  alturaInformado = prompt(nombre + ", Informe su altura: ");
+
+
+  imcCalculado = calcularImc(pesoInformado,alturaInformado);
+
+  ir(nombre + ", su IMC calculado es: " + imcCalculado);
+
+</script>

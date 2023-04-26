@@ -1,0 +1,29 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN</h1>
+<!--Indice de masa corporal-->
+
+<script>
+  // Formula = peso de la persona - divivido entre altura al cuadrado
+  function saltarLinea() {
+    document.write("<br>");
+
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  for(var lineas = 1; lineas <=3; lineas++){
+    //Loop anidados.
+    for(var columnas = 1; columnas<=10;columnas++){
+      document.write("*")
+    }
+    saltarLinea();
+    saltarLinea();
+  }
+  imprimir("Fin");
+</script>

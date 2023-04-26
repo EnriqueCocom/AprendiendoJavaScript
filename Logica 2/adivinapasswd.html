@@ -1,0 +1,29 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN</h1>
+
+
+<script>
+
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var contasena = prompt("Escribe una contraseña");
+
+  if (contasena == "micontrasena123"){
+    imprimir("Contraseña correcta");
+  }
+  else{
+    imprimir("Contraseña incorrecta");
+  }
+</script>

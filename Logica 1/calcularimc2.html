@@ -1,0 +1,52 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA CALCULAR IMC</h1>
+<!--Indice de masa corporal-->
+
+<script>
+  // Formula = peso de la persona - divivido entre altura al cuadrado
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  //Funcion para calcular el IMC --- se retornara la formula --  siempre empezar de  forma ordenada
+  // Se puede llamar a una función dentro de una función.
+
+  function calcularIMC(peso, altura) {
+    //imc = peso / (altura * altura);
+
+    return peso / (altura * altura);
+  }
+
+  var imcEnrique = calcularIMC(71,1.72)
+  var imcJuan = calcularIMC(75,1.73)
+
+  // pesoEnrique = 71;
+  //alturaEnrique = 1.72;
+  //imcEnrique = pesoEnrique / (alturaEnrique * alturaEnrique);
+  // imcEnrique = calcularIMC(71,1.72);
+  //calcularIMC(71, 1.72, "Enrique",75, 1.73, "Juan");
+  //calcularIMC(60, 1.70, "Gabriela",55, 1.60, "Luisa");
+  //imprimir("El promedio del imc calculado de Enrique y Juan es: " + nombre1 + " y " + nombre2 + " es " + (imc+imc2)/2);
+  imprimir("El promedio del imc calculado de Enrique y Juan es: " + (imcEnrique+imcJuan)/2);
+
+  imprimir("El promedio del imc calculado de Gabriela y Luisa es: " + (calcularIMC(65,1.68)+calcularIMC(55,1.60))/2);
+  //imprimir("El IMC de Enrique es: " + imcEnrique);
+
+  //Otro ejemplo
+
+  /// pesoJuan = 75;
+  //alturaJuan = 1.73;
+  //imcJuan = calcularIMC(pesoJuan,alturaJuan);
+ // calcularIMC(75, 1.73, "Juan");
+  //imprimir("El IMC de Juan  es: " + imcJuan);
+</script>

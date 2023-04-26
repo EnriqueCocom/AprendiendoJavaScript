@@ -1,0 +1,38 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+<!--
+  1 – Crea una función de lotería que reciba un número n y sortee un número entre 0 a n, retornando ese valor.
+  De esta forma, en vez de escribir var numeroPensado = Math.round(Math.random()*n);
+  escribirás var numeroPensado = sorteo(n);.
+  Realiza esa modificación, creando una nueva función y utilízala de forma correcta.
+-->
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var numeroPensado = Math.round(Math.random() * 10);
+  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+  if (numeroPensado == numeroLanzado){
+    imprimir("Felicidades, adivinaste el número");
+  }
+  else{
+    if(numeroLanzado > numeroPensado){
+      imprimir("Usted erró, el número pensado era menor");
+    }
+    else{
+      imprimir("Usted erró, el número pensado era mayor");
+    }
+  }
+</script>

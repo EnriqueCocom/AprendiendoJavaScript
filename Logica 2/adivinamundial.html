@@ -1,0 +1,33 @@
+<meta charset="UTF-8" />
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA - AÑO MUNDIAL FIFA</h1>
+
+
+<script>
+
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  // Parametro de entrada - esperando el texto e imprimirlo.
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var anioMundial = 1930;
+  var limite = parseInt(prompt("Ingrese el año limite para calcular "))
+
+  // Loop = iteraciones de código o repetir el codigo en funcion en una condición.
+  //Mientras = while
+
+  while (anioMundial <= limite) {
+    imprimir("Hubo mundial de la FIFA en el año " + anioMundial);
+    anioMundial = anioMundial + 4;
+  }
+
+  imprimir("Fin")
+</script>

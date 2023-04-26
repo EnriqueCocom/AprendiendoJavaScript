@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<!--Autor: Enrique Cocom Canul
+-->
+<h1>PROGRAMA </h1>
+
+<script>
+  //Agregar instrucciones
+  function saltarLinea(){
+    document.write("<br>")
+    document.write("<br>")
+    document.write("<br>")
+  }
+
+  // Parametro de entrada - esperando el texto.
+  function imprimir(frase){
+
+    document.write(frase)
+    saltarLinea();
+  }
+
+
+
+
+  //Las variables ayudan a no repetir el código y ahorrar tiempo.
+  var anio = 2025;
+
+  imprimir("Hola amigos");
+
+
+  // Este código calcula las edades de Juan, Pedro y Carlos
+  imprimir("Juan tiene: " + (anio-2000) + " años")
+
+
+  //Funciones recibe parametros- Usarverbos
+//  alert("Hola")
+  //document.write() devuelve el texto en pantalla.
+
+  //saltarLinea(); // Llamada a la función
+
+
+  imprimir("Pedro tiene: " + (anio-1995) + " años")
+
+  anio = 2030;
+
+
+  imprimir("Carlos tiene: " + (anio-2005) + " años")
+
+</script>
